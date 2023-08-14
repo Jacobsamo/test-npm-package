@@ -2,9 +2,13 @@
   "name": "test-npm-package",
   "version": "1.0.0",
   "description": "A simple package to learn how packages / libaries work",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean:all": "pnpm clean:build && pnpm clean:node",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules"
   },
   "author": "",
   "license": "ISC",

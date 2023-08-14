@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "declaration": true,
+    // "emitDeclarationOnly": true,
+    "strict": true,
+    "target": "ESNext", // Set the target ECMAScript version
+    "module": "CommonJS"
+  },
+  "include": ["src/**/*", "*.ts"],
+  "exclude": ["node_modules"]
+}
